@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הוספת פרסום חדש</title>
+    <link rel="stylesheet" href="advertiseUpdate.css">
+    <script src="advertiseUpdate.js" type="module"></script>
+</head>
+<body>
+<header class="header">
+        <div class="container-logo">
+            <h1 class="logo">E V E N T I F Y</h1>
+        </div>
+    </header>
+    <h2>עדכון פרסום </h2>
+    <form id="advertisementForm">
+      <label for="name">שם הפרסום:</label>
+      <input type="text" id="name" required><br>
+  
+      <label for="price">מחיר:</label>
+      <input type="number" id="price" min="0" required><br>
+  
+      <label for="street">רחוב:</label>
+      <input type="text" id="street" required><br>
+  
+      <label for="city">עיר:</label>
+      <input type="text" id="city" required><br>
+  
+      <label for="pic">קישור לתמונה:</label>
+      <input type="text" id="pic"><br>
+  
+      <label>בחר אירועים מתאימים:</label><br>
+      <label><input type="checkbox" name="eventArr" value="חתונה"> חתונה</label>
+      <label><input type="checkbox" name="eventArr" value="בר מצווה"> בר מצווה</label>
+      <label><input type="checkbox" name="eventArr" value="ברית"> ברית</label>
+      <label><input type="checkbox" name="eventArr" value="בת מצווה"> בת מצווה</label><br>
+  
+      <label for="category">קטגוריה:</label>
+      <select id="category">
+        <option value="אולם">אולם</option>
+        <option value="צלם">צלם</option>
+        <option value="קיטרינג">קיטרינג</option>
+        <option value="עיצובי פרחים">עיצובי פרחים</option>
+        <option value="זמר">זמר</option>
+      </select><br>
+  
+      <div class="filter-group">
+        <label for="location">מיקום</label>
+        <select id="location" >
+            <option value="all">כל המיקומים</option>
+            <option value="צפון">צפון</option>
+            <option value="דרום">דרום</option>
+            <option value="מרכז">מרכז</option>
+        </select>
+    </div>
+    
+      <label for="phone">טלפון:</label>
+      <input type="tel" id="phone" required><br>
+  
+      <label for="description">תיאור:</label>
+      <textarea id="description" rows="4" required></textarea><br>
+  
+      <button type="button" onclick="advertiseUpdate()">עדכן פרסום</button>
+    </form>
+  
+</body>
+</html>

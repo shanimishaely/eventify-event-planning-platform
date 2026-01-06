@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דף מפרסם</title>
+    <link rel="stylesheet" href="advertiser.css">
+    <script type="module" src="advertiser.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container-logo">
+            <h1 class="logo">E V E N T I F Y</h1>
+        </div>
+    </header>
+    <div class="container">
+        <header>
+            <h1>שלום לך, מפרסם! </h1>
+            <button id="add-ad-btn" class="main-btn" onclick="window.location.href='../advertiseAdd/advertiseAdd.html'">הוסף פרסומת חדשה</button>
+            <button id="home-btn" class="secondary-btn">התנתקות</button>
+        </header>
+        
+        <div id="advertisements-list">
+            
+            <h2>הפרסומות שלך</h2>
+            </div>
+    </div>
+
+    <div id="ad-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modal-title" >הוסף פרסומת חדשה</h3>
+           
+            <!-- <section class="items-display"> -->
+                <div class="container">
+                    <!-- Items will be injected here by JavaScript -->
+                </div>
+            <!-- </section> -->
+           
+        </div>
+    </div>
+</body>
+</html>

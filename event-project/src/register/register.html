@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>טופס כניסה</title>
+    <link rel="stylesheet" href="register.css">
+    <script type="module" src="register.js" defer></script>
+</head>
+<body>
+    <header class="header">
+  <div class="container-logo">
+    <h1 class="logo">E V E N T I F Y</h1>
+  </div>
+</header>
+    <div class="container">
+        <h2>טופס הרשמה</h2>
+        <form>
+            <label for="username">שם משתמש</label>
+            <input type="text" id="userName" name="userName" required>
+
+            <label for="email">מייל</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">סיסמא</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="phone">טלפון</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="role">בחר תפקיד</label>
+            <select id="role" name="role">
+                <option value="advertiser">מפרסם</option>
+                <option value="user">משתמש</option>
+            </select> 
+            <button type="submit" onclick="reg(event)" >הירשם</button>
+       </form>
+      
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אירועים יוקרתיים</title>
+    <link rel="stylesheet" href="./src/main/style.css">
+   <!-- <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+  <div id="app"></div>
+  <script type="module"  src="./src/main/main.js"></script>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">E V E N T I F Y</h1>
+            <nav class="auth-buttons">
+                <a href="/src/login/login.html" class="btn btn-login">התחברות</a>
+                <a href="/src/register/register.html" class="btn btn-register">הרשמה</a>
+            </nav>
+        </div>
+    </header>
+
+   
+    <section class="hero-section">
+     
+        <video autoplay muted loop id="hero-video">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-guests-at-a-dinner-party-5203-large.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <img src="/gif.gif" alt="My GIF">
+
+
+            <h1 class="animate__fadeInUp">האירוע המושלם שלכם, מתחיל כאן.</h1>
+            <h2 class="animate__fadeInUp">החוויה המושלמת לארגון אירועים יוקרתיים במקום אחד.<nav></nav>
+                נותן השראה לארגון והפקת אירוע יוקרתי עד לפרטים הקטנים.<nav></nav> 
+                ואידיאלי ביותר לפרסום העסק שלך.</h2>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filter-group">
+                <label for="event-type">סוג אירוע</label>
+                <select id="event-type">
+                    <option value="all">כל הסוגים</option>
+                    <option value="חתונה">חתונה</option>
+                    <option value="בר מצווה">בר מצווה</option>
+                    <option value="בת מצווה">בת מצווה</option>
+                    <option value="ברית">ברית</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="location">מיקום</label>
+                <select id="location" >
+                    <option value="all">כל המיקומים</option>
+                    <option value="צפון">צפון</option>
+                    <option value="דרום">דרום</option>
+                    <option value="מרכז">מרכז</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="category">קטגוריה</label>
+                <select id="category" >
+                    <option value="all">כל הקטגוריות</option>
+                    <option value="אולם">אולם</option>
+                    <option value="קייטרינג">קייטרינג</option>
+                    <option value="עיצובי פרחים">עיצובי פרחים</option>
+                    <option value="צלם">צלם</option>
+                    <option value="זמר">זמר</option>
+                </select>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Items Display Section -->
+    <section class="items-display">
+        <div class="container">
+            <!-- Items will be injected here by JavaScript -->
+        </div>
+    </section>
+
+</body>
+</html>
